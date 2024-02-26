@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Moeda em real</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>multiplicador</h1>
+    </header>
+    <div class="container">
+    <form>
+        <input type="number" placeholder="Digite a cotação U$" id="dolar" > <p>X</p>
+        <input type="number" placeholder="Digite o valor R$" id="real" >
+        <input type="button" value="Multiplicador" onclick="converter()">
+        <p id="result">resultado</p>
+    </form>
+    </div>
+    <script>
+        function converter(){
+    var us = window.document.getElementById('dolar')
+    var rs = window.document.getElementById('real')
+    var n1 = Number.parseFloat(us.value)
+    var n2 = Number.parseFloat(rs.value)
+    var multiplicador = n1*n2
+    var res = window.document.getElementById('result')
+    res.innerText = multiplicador
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title> 
+    <style> *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        font: normal 20pt arial; 
+    }
+    header h1 {
+        background-color: rgba(211, 37, 202, 0.534);
+        color: rgb(255, 81, 0);
+        padding: 15px;
+    }
+    header {
+        margin: 0px 0px 25px;
+    }
+    #pergunta input  {
+        display: block;
+        font: normal 20pt arial;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>De que país você é ?</h1>
+    </header>
+        <div id="pergunta">
+            <form>
+                <input type="text" placeholder="digite seu pais" name="Pais" id="pais">
+                <input type="button" value="verificar" onclick="clicar()">
+                <p id="resultado">
+                </p>
+            </form>
+        </div>
+    <script>
+        function clicar(){
+        var cidade = window.document.getElementById('pais')
+        var result = window.document.getElementById('resultado')
+        var cid = String(cidade.value)
+        result.innerHTML = '<p>Você é do país ' + cid + '</p>'
+        if(cid == 'brasil'){
+            result.innerHTML += '<p> Você é brasileiro </p>' 
+        }else{
+            result.innerHTML += '<p> Você é gringo </p>'
+        }
+    }
+    </script>
+</body>
+</html>

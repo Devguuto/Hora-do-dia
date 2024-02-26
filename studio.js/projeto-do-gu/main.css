@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+Header {
+    padding: 30px;
+    margin-top: none;
+    background-color: rgb(94, 29, 29);
+    color: rgb(0, 0, 0);
+}
+form input,
+form button,
+form p {
+    font: normal 20pt arial;
+    display: block;
+    padding:17px 10px; 
+    margin: 17px 10px
+}
+

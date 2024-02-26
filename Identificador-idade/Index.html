@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="cabeca">
+    <h1>Verificador De Idade</h1> 
+</header>
+<section class="secao">
+    <div class="1">
+        <p>Ano de Nascimento:
+            <input type="number" name="TxtAno" id="TxtAno" placeholder="Idade" min="0"> 
+        </p>
+        <p>
+            Sexo:
+            <input type="radio" name="RadSex" id="Masc" checked>
+            <label for="Masc">Masculino</label>
+            <input type="radio" name="RadSex" id="Fem" >
+            <label for="Fem">Feminino</label>
+        </p>
+        <P>
+            <input type="button" value="verificar" onclick="verificar()">
+        </P>
+    </div>
+    <div id="res">
+        Preencha os dados acima para ver o resultado! 
+    </div>
+
+</section>
+<footer class="copy">
+    <p>&copy;GutoDev</p>
+</footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
